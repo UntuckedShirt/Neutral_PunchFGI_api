@@ -1,7 +1,7 @@
-class GameSerializer < ActiveModel::Serializer
+class GameSerializer < ApplicationSerializer
   attributes :id, :title, :creator
   def creator
-    {creatorId: self.object.creator.id, 
+    {creator_id: self.object.creator.id, 
      creatorName: self.object.creator.name
     }
   end 
