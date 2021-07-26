@@ -1,4 +1,4 @@
-class CreatorSerializer < ActiveModel::Serializer
+class CreatorSerializer < ApplicationSerializer
   attributes :id, :games
   def games
     self.object.games.map do |game|
