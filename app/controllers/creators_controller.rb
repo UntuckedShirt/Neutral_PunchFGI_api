@@ -22,7 +22,11 @@
       end
 
       def update
-
+        if @creator.update(creator_params)
+          render json: @creator
+        else
+          render json: @creator.errors, status: :unprocessable_entity
+        end
       end
 
       def destroy
