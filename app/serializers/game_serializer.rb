@@ -1,8 +1,9 @@
 class GameSerializer < ApplicationSerializer
-  attributes :id, :title, :creator
+  attributes :creator_id, :title, :publisher, :publish_date, :player_count, :creator
   def creator
+    
     {creator_id: self.object.creator.id, 
-     creatorName: self.object.creator.name
+     creator_name: self.object.creator.name
     }
   end 
 end

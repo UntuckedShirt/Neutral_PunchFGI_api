@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_07_26_035054) do
   end
 
   create_table "games", force: :cascade do |t|
+    t.string "name"
     t.string "title"
     t.string "publisher"
     t.string "publish_date"

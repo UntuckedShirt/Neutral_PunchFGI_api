@@ -5,7 +5,8 @@ class CreatorSerializer < ApplicationSerializer
       {title: game.title, 
        publisher: game.publisher,
        publishDate: game.publish_date,
-      playerCount: game.player_count}
-    end 
-  end 
-end
+      playerCount: game.player_count
+      }
+    end #end do 
+  end  #end def
+end #end class
