@@ -3,5 +3,5 @@ class Game < ApplicationRecord
     validates :title, presence: true, length: { minimum: 3, maximum: 10000}
     # validates :publisher, presence: true, length: { minimum: 3, maximum: 10000}
     # validates :publish_date, presence: true, length: { minimum: 3, maximum: 10000}
-    
+    accepts_nested_attributes_for :creator
 end

@@ -47,7 +47,7 @@
 
     # Only allow a list of trusted parameters.
     def game_params
-      params.require(:game).permit(:title, :publisher, :publish_date, :player_count, :creator_id)
+      params.require(:game).permit(:title, :publisher, :publish_date, :player_count, :creator_id, creator_attributes: [:name] )
     end
   end
 
